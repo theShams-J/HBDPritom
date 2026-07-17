@@ -6,7 +6,7 @@
 /* ==========================================
    ELEMENTS
 ========================================== */
-
+const cake = document.getElementById("cake");
 const beginBtn = document.getElementById("beginBtn");
 const landing = document.getElementById("landing");
 const website = document.getElementById("website");
@@ -136,7 +136,9 @@ function blowCandle() {
    TAP CANDLE
 ========================================== */
 
-fallbackBtn.addEventListener("click", blowCandle);
+cake.addEventListener("click", () => {
+    blowCandle();
+});
 
 
 
