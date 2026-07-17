@@ -147,10 +147,26 @@ fallbackBtn.addEventListener("click", blowCandle);
 closeCelebration.addEventListener("click", () => {
 
     birthdayMusic.pause();
-
     birthdayMusic.currentTime = 0;
 
-    history.back();
+    bgMusic.currentTime = 0;
+    bgMusic.play().catch(() => { });
+
+    celebration.classList.remove("show");
+    cakeScreen.classList.remove("show");
+
+    resetCake();
+
+    history.replaceState(
+        { page: "main" },
+        "",
+        "#main"
+    );
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
 });
 
