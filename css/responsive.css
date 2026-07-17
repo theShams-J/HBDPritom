@@ -1,0 +1,329 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+
+/* Large Tablets */
+
+@media (max-width: 992px) {
+
+
+    h1 {
+
+        font-size: 4rem;
+
+    }
+
+
+    h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+
+    .hero-caption {
+
+        font-size: 2.5rem;
+
+    }
+
+
+
+    .gallery-grid {
+
+        gap: 35px;
+
+    }
+
+
+}
+
+
+
+
+
+/* Tablets & Mobile */
+
+@media (max-width: 768px) {
+
+
+    section {
+
+        padding: 70px 0;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 3.2rem;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+
+
+
+    /* Landing */
+
+
+    .landing-content h4 {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    .landing-content h1 {
+
+        font-size: 3.5rem;
+
+    }
+
+
+
+    .landing-content p {
+
+        font-size: 1rem;
+
+    }
+
+
+
+    #beginBtn {
+
+        padding: 14px 35px;
+
+    }
+
+
+
+
+
+    /* Hero */
+
+
+    #hero {
+
+        min-height: auto;
+
+        padding-top: 100px;
+
+    }
+
+
+
+    .hero-image {
+
+        max-width: 320px;
+
+    }
+
+
+
+    .hero-caption {
+
+        font-size: 2rem;
+
+    }
+
+
+
+
+
+    /* Gallery */
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+
+    .memory-card {
+
+        max-width: 350px;
+
+        margin: auto;
+
+    }
+
+
+
+
+
+    /* Letter */
+
+
+    .letter-photo {
+
+        width: 170px;
+
+    }
+
+
+
+    .letter-paper {
+
+        padding: 70px 25px 40px;
+
+    }
+
+
+
+    .letter-content {
+
+        font-size: .95rem;
+
+    }
+
+
+
+
+
+    /* Cake */
+
+
+    .cake-box h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+
+    #cake {
+
+        font-size: 120px;
+
+    }
+
+
+
+    #flame {
+
+        bottom: 115px;
+
+    }
+
+
+
+
+
+    /* Celebration */
+
+
+    .celebration-content img {
+
+        width: 260px;
+
+        height: auto;
+
+        aspect-ratio: 3 / 4;
+
+    }
+
+
+
+    .celebration-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+
+
+
+
+/* Small Phones */
+
+@media (max-width: 480px) {
+
+
+    h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+    .landing-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+
+    #beginBtn {
+
+        font-size: .95rem;
+
+        padding: 12px 28px;
+
+    }
+
+
+
+    .cake-area {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+
+
+    #cake {
+
+        font-size: 100px;
+
+    }
+
+
+
+    #flame {
+
+        bottom: 95px;
+
+        font-size: 35px;
+
+    }
+
+
+
+    .celebration-content p {
+
+        font-size: .9rem;
+
+    }
+
+}

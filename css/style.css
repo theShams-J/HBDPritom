@@ -1,0 +1,28 @@
+/* ==========================================
+   MAIN CSS FILE
+   Imports all stylesheets
+========================================== */
+
+
+/* Foundation */
+@import url('variables.css');
+
+
+/* Landing Page */
+@import url('landing.css');
+
+
+/* Main Sections */
+@import url('sections.css');
+
+
+/* Cake & Celebration */
+@import url('cake.css');
+
+
+/* Animations */
+@import url('animation.css');
+
+
+/* Responsive Design */
+@import url('responsive.css');

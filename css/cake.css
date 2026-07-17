@@ -1,0 +1,531 @@
+/* ==========================================
+   FINAL CELEBRATION
+========================================== */
+
+#celebration {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow-y: auto;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(180deg,
+            #ffe5ef,
+            #fff7fb,
+            #ffffff);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .45s ease;
+
+    z-index: 100000;
+
+}
+
+#celebration.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.celebration-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    animation: celebrationIn .8s ease;
+
+}
+
+
+
+
+
+/* ==========================================
+   PHOTO FRAME
+========================================== */
+
+.photo-frame {
+
+    position: relative;
+
+    width: 320px;
+
+    margin: 0 auto 35px;
+
+    animation: float 5s ease-in-out infinite;
+
+}
+
+.photo-frame img {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 8px solid white;
+
+    animation: glow 3s ease-in-out infinite;
+
+}
+
+
+
+
+
+/* ==========================================
+   BALLOONS
+========================================== */
+
+.balloon {
+
+    position: absolute;
+
+    width: 120px;
+
+    pointer-events: none;
+
+    animation: float 4s ease-in-out infinite;
+
+    z-index: 5;
+
+}
+
+.balloon img {
+
+    width: 100%;
+
+}
+
+.balloon-left {
+
+    left: -95px;
+
+    top: 40px;
+
+}
+
+.balloon-right {
+
+    right: -95px;
+
+    top: 70px;
+
+    animation-delay: 2s;
+
+}
+
+
+
+
+
+/* ==========================================
+   SPARKLES
+========================================== */
+
+.sparkle {
+
+    position: absolute;
+
+    font-size: 28px;
+
+    pointer-events: none;
+
+    animation: sparkle 2.5s infinite;
+
+    z-index: 10;
+
+}
+
+.sparkle-1 {
+
+    top: -20px;
+
+    left: -20px;
+
+}
+
+.sparkle-2 {
+
+    top: -15px;
+
+    right: -20px;
+
+    animation-delay: .5s;
+
+}
+
+.sparkle-3 {
+
+    bottom: -20px;
+
+    left: -15px;
+
+    animation-delay: 1s;
+
+}
+
+.sparkle-4 {
+
+    bottom: -20px;
+
+    right: -15px;
+
+    animation-delay: 1.5s;
+
+}
+
+
+
+
+
+/* ==========================================
+   TITLES
+========================================== */
+
+.celebration-content h1 {
+
+    margin-top: 15px;
+
+    font-size: 4rem;
+
+    color: var(--primary-dark);
+
+    opacity: 0;
+
+    animation: fadeUp .8s ease forwards;
+
+}
+
+.celebration-content h3 {
+
+    margin: 12px 0 25px;
+
+    font-family: var(--body-font);
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    color: var(--primary-dark);
+
+    opacity: 0;
+
+    animation: fadeUp .8s ease .3s forwards;
+
+}
+
+.celebration-content p {
+
+    max-width: 560px;
+
+    margin: auto;
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    opacity: 0;
+
+    animation: fadeUp .8s ease .6s forwards;
+
+}
+
+
+
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+#closeCelebration {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: var(--primary-dark);
+
+    font-size: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease;
+
+    z-index: 100001;
+
+}
+
+#closeCelebration:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+    transform: rotate(90deg) scale(1.1);
+
+}
+
+
+
+
+
+/* ==========================================
+   GLOW ANIMATION
+========================================== */
+
+@keyframes glow {
+
+    0% {
+
+        box-shadow:
+            0 0 0 6px #ffd9e6,
+            0 0 25px rgba(245, 143, 178, .35),
+            var(--shadow-large);
+
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 0 8px #ffd9e6,
+            0 0 55px rgba(245, 143, 178, .65),
+            var(--shadow-large);
+
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 0 6px #ffd9e6,
+            0 0 25px rgba(245, 143, 178, .35),
+            var(--shadow-large);
+
+    }
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:768px) {
+
+    .photo-frame {
+
+        width: 260px;
+
+    }
+
+    .balloon {
+
+        width: 90px;
+
+    }
+
+    .balloon-left {
+
+        left: -65px;
+
+        top: 50px;
+
+    }
+
+    .balloon-right {
+
+        right: -65px;
+
+        top: 70px;
+
+    }
+
+    .sparkle {
+
+        font-size: 22px;
+
+    }
+
+    .celebration-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .celebration-content h3 {
+
+        font-size: 1.05rem;
+
+    }
+
+    .celebration-content p {
+
+        font-size: 1rem;
+
+        padding: 0 10px;
+
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .photo-frame {
+
+        width: 220px;
+
+    }
+
+    .balloon {
+
+        width: 70px;
+
+    }
+
+    .balloon-left {
+
+        left: -40px;
+
+        top: 55px;
+
+    }
+
+    .balloon-right {
+
+        right: -40px;
+
+        top: 70px;
+
+    }
+
+    .sparkle {
+
+        font-size: 18px;
+
+    }
+
+    .celebration-content h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .celebration-content h3 {
+
+        font-size: .95rem;
+
+    }
+
+    .celebration-content p {
+
+        font-size: .95rem;
+
+        line-height: 1.7;
+
+    }
+
+    #closeCelebration {
+
+        width: 42px;
+
+        height: 42px;
+
+        top: 18px;
+
+        right: 18px;
+
+        font-size: 18px;
+
+    }
+
+}
+
+#cakeScreen {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg,
+            #fff0f5,
+            #fff8e7);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .4s ease;
+
+    z-index: 99999;
+
+}
+
+#cakeScreen.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}

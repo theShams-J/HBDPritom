@@ -1,0 +1,325 @@
+/* ==========================================
+   LANDING SCREEN
+========================================== */
+
+
+#landing {
+
+    position: fixed;
+
+    inset: 0;
+
+    min-height: 100vh;
+
+    background: var(--landing-bg);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    z-index: 9999;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transition: 1s ease;
+
+}
+
+
+
+/* Content */
+
+.landing-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    padding: 20px;
+
+}
+
+
+
+.landing-content h4 {
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+
+    animation: fadeDown 1s ease forwards;
+
+}
+
+
+
+.landing-content h1 {
+
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+
+    animation: fadeUp 1.2s ease forwards;
+
+}
+
+@media(max-width:576px) {
+
+
+    .landing-content h4 {
+
+        font-size: 1.5rem;
+
+    }
+
+
+    .landing-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+    .landing-content p {
+
+        font-size: 1rem;
+
+    }
+
+
+    #beginBtn {
+
+        padding: 14px 35px;
+
+    }
+
+
+}
+
+
+
+.landing-content p {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 40px;
+
+    animation: fadeUp 1.5s ease forwards;
+
+}
+
+
+
+
+
+/* Begin Button */
+
+#beginBtn {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    padding: 16px 45px;
+
+    border-radius: var(--radius-round);
+
+    font-size: 1.1rem;
+
+    box-shadow: var(--shadow);
+
+    animation: pulse 2s infinite;
+
+}
+
+
+
+#beginBtn i {
+
+    margin-left: 8px;
+
+}
+
+
+#beginBtn {
+
+    transition: .3s ease;
+
+}
+
+#beginBtn:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+/* Floating Decorative Elements */
+
+.floating-hearts::before {
+
+    content: "❤";
+
+    position: absolute;
+
+    top: 20%;
+
+    left: 10%;
+
+    font-size: 35px;
+
+    color: var(--primary);
+
+    animation: float 5s infinite ease-in-out;
+
+}
+
+
+
+.floating-hearts::after {
+
+    content: "❤";
+
+    position: absolute;
+
+    bottom: 15%;
+
+    right: 12%;
+
+    font-size: 45px;
+
+    color: var(--primary-light);
+
+    animation: float 6s infinite ease-in-out reverse;
+
+}
+
+
+
+
+
+/* Balloons */
+
+.floating-balloons::before {
+
+    content: "🎈";
+
+    position: absolute;
+
+    bottom: -100px;
+
+    left: 15%;
+
+    font-size: 70px;
+
+    animation: balloon 12s infinite linear;
+
+}
+
+
+
+.floating-balloons::after {
+
+    content: "🎈";
+
+    position: absolute;
+
+    bottom: -100px;
+
+    right: 15%;
+
+    font-size: 60px;
+
+    animation: balloon 15s infinite linear;
+
+}
+
+
+
+
+
+/* Sparkles */
+
+.sparkles::before {
+
+    content: "✨ ✨ ✨";
+
+    position: absolute;
+
+    top: 15%;
+
+    right: 15%;
+
+    font-size: 25px;
+
+    letter-spacing: 15px;
+
+    animation: sparkle 3s infinite;
+
+}
+
+
+
+.sparkles::after {
+
+    content: "✨ ✨";
+
+    position: absolute;
+
+    bottom: 20%;
+
+    left: 20%;
+
+    font-size: 20px;
+
+    animation: sparkle 4s infinite;
+
+}
+
+
+
+
+
+/* Landing hide animation */
+
+#landing.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 1s ease;
+
+}
+
+#landing::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    background: rgba(255, 255, 255, .35);
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+}

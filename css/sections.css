@@ -1,0 +1,387 @@
+/* ==========================================
+   MAIN WEBSITE SECTIONS
+========================================== */
+
+
+/* Hide website initially */
+
+#website {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 1s ease;
+
+}
+
+
+#website.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+
+#hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--hero-gradient);
+
+    overflow: hidden;
+
+}
+
+
+
+.hero-image {
+
+    max-width: 450px;
+
+    margin: auto;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-large);
+
+}
+
+
+
+.hero-caption {
+
+    margin-top: 40px;
+
+    font-size: 3rem;
+
+}
+
+
+
+
+
+/* ==========================================
+   GALLERY COMMON STYLE
+========================================== */
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,
+            minmax(250px, 1fr));
+
+    gap: 50px;
+
+}
+
+
+
+.memory-card {
+
+    background: var(--white);
+
+    padding: 15px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+
+
+.memory-card:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+}
+
+
+
+.memory-card img {
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+}
+
+
+
+.memory-text {
+
+    padding: 20px 10px 10px;
+
+    text-align: center;
+
+}
+
+
+
+.memory-text h4 {
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.memory-text p {
+
+    font-size: .95rem;
+
+}
+
+
+
+
+
+/* Photo rotation */
+
+.rotate-left {
+
+    transform: rotate(-3deg);
+
+}
+
+
+
+.rotate-right {
+
+    transform: rotate(3deg);
+
+}
+
+
+
+
+
+/* ==========================================
+   FRIEND GALLERY
+========================================== */
+
+
+#friendsGallery {
+
+    background: #fff;
+
+}
+
+
+
+
+
+/* ==========================================
+   HER GALLERY
+========================================== */
+
+
+#herGallery {
+
+    background: var(--primary-light);
+
+}
+
+
+
+
+
+/* ==========================================
+   LETTER SECTION
+========================================== */
+
+
+
+.letter-photo {
+
+    width: 220px;
+
+    margin: 0 auto -50px;
+
+    position: relative;
+
+    z-index: 2;
+
+    transform: rotate(-8deg);
+
+}
+
+.letter-photo img {
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow-large);
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+}
+
+
+
+.letter-wrapper {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+.letter-photo img {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow-large);
+
+}
+
+
+
+.letter-paper {
+
+    background: var(--paper);
+
+    padding: 80px 60px 60px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.letter-paper h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.letter-content {
+
+    font-size: 1.05rem;
+
+    line-height: 2;
+
+}
+
+
+
+.letter-content h3 {
+
+    text-align: right;
+
+    margin-top: 30px;
+
+}
+
+
+
+
+
+/* ==========================================
+   SURPRISE SECTION
+========================================== */
+
+
+#surprise {
+
+    min-height: 60vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: var(--primary-light);
+
+}
+
+
+
+#surprise h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#surpriseBtn {
+
+    margin-top: 30px;
+
+    background: var(--gold);
+
+    color: var(--black);
+
+    padding: 18px 55px;
+
+    border-radius: var(--radius-round);
+
+    font-size: 1.2rem;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+#surpriseBtn:hover {
+
+    transform: scale(1.08);
+
+}
+
+#surpriseBtn {
+
+    transition: .3s ease;
+
+}
